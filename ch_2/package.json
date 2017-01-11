@@ -4,11 +4,11 @@
     "watch": "gulp watch"
   },
   "dependencies": {
-    "mongoose": "4.0.3"
+    "mongoose": "^4.0.3"
   },
   "devDependencies": {
-    "gulp": "3.8.11",
-    "gulp-mocha": "2.0.1",
-    "mocha": "2.2.4"
+    "gulp": "^3.8.11",
+    "gulp-mocha": "^2.0.1",
+    "mocha": "^2.2.4"
   }
 }

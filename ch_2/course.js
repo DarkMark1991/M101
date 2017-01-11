@@ -7,11 +7,30 @@ var mongoose = require('mongoose');
  *                Computer Science". Required, maximum of 140 characters.
  *                See http://mongoosejs.com/docs/api.html#schema_string_SchemaString-maxlength
  *  description:  a description of the course as a string. Required.
- *  requirements: an of course numbers (as strings) representing the courses
+ *  requirements: an array of course numbers (as strings) representing the courses
  *                a student should take before taking this course.
  */
 var schema = new mongoose.Schema({
-  // Implement schema here!
+  _id: {
+    type: String,
+    required: true
+  },
+
+  title: {
+    type: String,
+    required: true,
+    maxlength: 140
+  },
+
+  description: {
+    type: String,
+    required: true
+  },
+
+  requirements: [{
+    type: String,
+    ref: 'Course'
+  }]
 });
 
 module.exports = schema;
