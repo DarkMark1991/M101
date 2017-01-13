@@ -47,3 +47,6 @@ jspm_packages
 
 # Yarn Integrity file
 .yarn-integrity
+
+#config contains API keys
+./**/config.json
